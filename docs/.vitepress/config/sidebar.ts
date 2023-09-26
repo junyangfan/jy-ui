@@ -1,10 +1,11 @@
 export default {
-  '/components/': [
-      {
-          title: '基础组件',
-          collapsable: true, //是否默认展开
-          children: ['JButton']
-      },
+  "/components/": [
+    {
+      text: '常用组件',
+      items: [
+        { text: "按钮", link: "/components/JButton" },
+        { text: '输入框', link: '/components/JInput' }
+      ],
+    },
   ],
-  '/guide/': ['install'],
-}
+};

@@ -18,7 +18,6 @@
 ```
 
 ## 高级用法
-xxxxxxxxxx
 
 ::: warning
 This is a warning

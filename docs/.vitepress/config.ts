@@ -20,6 +20,9 @@ export default {
   ],
   plugins: [],
   markdown: {
+    headers: {
+      level: [0, 0],
+    },
     // 代码块显示行号
     lineNumbers: true,
   },
