@@ -3,3 +3,4 @@
 **/postcss.config.js
 **/vite.config.ts
 **/vite.d.ts
+**/lib/**
