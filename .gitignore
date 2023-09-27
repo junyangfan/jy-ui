@@ -6,7 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-docs/.vuepress/dist
+docs/.vitepress/dist
+docs/.vitepress/cache
 
 node_modules
 dist
@@ -23,4 +24,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-docs/.vuepress/cache
