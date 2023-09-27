@@ -12,21 +12,48 @@
     "docs:dev": "vitepress dev docs --host",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "docs:deploy": "sh deploy.sh"
+    "docs:deploy": "sh deploy.sh",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged --allow-empty",
+    "ac": "git add . && cz",
+    "cm": "cz"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "ant-design-vue": "4.x",
+    "eslint": "^8.50.0",
     "less": "^4.2.0",
     "vite-plugin-compression": "^0.5.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
     "@vitejs/plugin-vue": "^4.2.3",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.7.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vitepress": "^1.0.0-rc.12",
     "vue-tsc": "^1.8.5"
+  },
+  "lint-staged": {
+    "config": "./.lintstagedrc.cjs"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
   }
 }
