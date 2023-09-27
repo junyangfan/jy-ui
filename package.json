@@ -16,7 +16,7 @@
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx",
     "lint:fix": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "prepare": "husky install",
-    "lint-staged": "lint-staged --allow-empty",
+    "lint-staged": "lint-staged",
     "ac": "git add . && cz",
     "cm": "cz"
   },

@@ -63,7 +63,7 @@ module.exports = {
     "no-else-return": 2, //如果if语句里面有return,后面不能跟else语句
     "no-empty": 2, //块语句中的内容不能为空
     "no-empty-character-class": 2, //正则表达式中的[]内容不能为空
-    "no-empty-label": 2, //禁止使用空label
+    "no-empty-label": 0, //禁止使用空label
     "no-eq-null": 2, //禁止对null使用==或!=运算符
     "no-eval": 1, //禁止使用eval
     "no-ex-assign": 2, //禁止给catch语句中的异常参数赋值
@@ -153,7 +153,7 @@ module.exports = {
     "brace-style": [1, "1tbs"], //大括号风格
     "callback-return": 1, //避免多次调用回调什么的
     camelcase: 2, //强制驼峰法命名
-    "comma-dangle": [2, "never"], //对象字面量项尾不能有逗号
+    "comma-dangle": [0, "never"], //对象字面量项尾不能有逗号
     "comma-spacing": 0, //逗号前后的空格
     "comma-style": [2, "last"], //逗号风格，换行时在行首还是行尾
     complexity: [0, 11], //循环复杂度
@@ -173,7 +173,7 @@ module.exports = {
     "guard-for-in": 0, //for in循环要用if语句过滤
     "handle-callback-err": 0, //nodejs 处理错误
     "id-length": 0, //变量名长度
-    indent: [2, 4], //缩进风格
+    indent: ['off', 2], //缩进风格
     "init-declarations": 0, //声明时必须赋初值
     "key-spacing": [0, { beforeColon: false, afterColon: true }], //对象字面量中冒号的前后空格
     "lines-around-comment": 0, //行前/行后备注
@@ -195,7 +195,7 @@ module.exports = {
     "prefer-spread": 0, //首选展开运算
     "prefer-reflect": 0, //首选Reflect的方法
     quotes: [1, "single"], //引号类型 `` "" ''
-    "quote-props": [2, "always"], //对象字面量中的属性名是否强制双引号
+    "quote-props": [0, "always"], //对象字面量中的属性名是否强制双引号
     radix: 2, //parseInt必须指定第二个参数
     "id-match": 0, //命名检测
     "require-yield": 0, //生成器函数必须有yield
@@ -207,7 +207,6 @@ module.exports = {
     "space-before-function-paren": [0, "always"], //函数定义时括号前面要不要有空格
     "space-in-parens": [0, "never"], //小括号里面要不要有空格
     "space-infix-ops": 0, //中缀操作符周围要不要有空格
-    "space-return-throw-case": 2, //return throw case后面要不要加空格
     "space-unary-ops": [0, { words: true, nonwords: false }], //一元运算符的前/后要不要加空格
     "spaced-comment": 0, //注释风格要不要有空格什么的
     strict: 2, //使用严格模式
@@ -218,5 +217,12 @@ module.exports = {
     "wrap-iife": [2, "inside"], //立即执行函数表达式的小括号风格
     "wrap-regex": 0, //正则表达式字面量用小括号包起来
     yoda: [2, "never"], //禁止尤达条件
+    "prettier/prettier": [
+      'error',
+      {
+        useTabs: false,
+        tabWidth: 2,
+      }
+    ]
   },
 };
