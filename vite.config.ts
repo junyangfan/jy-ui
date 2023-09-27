@@ -5,16 +5,14 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 import viteCompression from 'vite-plugin-compression' // 静态资源压缩
 import dts from 'vite-plugin-dts' // 类型声明文件
-import DefineOptions from "unplugin-vue-define-options/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    dts(),
     vueJsx(),
+    dts(),
     vueSetupExtend(),
-    DefineOptions(),
     viteCompression({
       verbose: true,
       disable: false, // 不禁用压缩
