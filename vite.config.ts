@@ -5,6 +5,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend' // 设置name属性
 import viteCompression from 'vite-plugin-compression' // 静态资源压缩
 import dts from 'vite-plugin-dts' // 类型声明文件
+import postcssPresetEnv from 'postcss-preset-env'	// css样式兼容处理
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -30,6 +31,11 @@ export default defineConfig({
     // 类型： string[] 导入时想要省略的扩展名列表。
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue',],
   },
+	css: {
+		postcss: {
+			plugins: [postcssPresetEnv()]
+		}
+	},
   build: {
     outDir: 'lib',
     //压缩

@@ -3,8 +3,12 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "description": "Vue3 中基于 Antd 二次封装基础组件文档",
-  "author": "fanjunyang",
+  "description": "Vue3 中基于 ant-design-vue 二次封装基础组件文档",
+  "author": {
+    "name": "fanjunyang",
+    "email": "isjunyang.fan@gmail.com",
+    "url": "https://blog.fanjunyang.zone"
+  },
   "license": "ISC",
   "scripts": {
     "dev": "vite --host",
@@ -43,6 +47,8 @@
     "eslint-plugin-vue": "^9.17.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
+    "postcss": "^8.4.30",
+    "postcss-preset-env": "^9.1.4",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
@@ -69,6 +75,7 @@
     "jy-ui",
     "二次封装组件",
     "封装组件",
-    "components"
+    "components",
+    "fanjunyang"
   ]
 }
