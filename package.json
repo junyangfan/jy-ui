@@ -3,7 +3,7 @@
   "private": false,
   "version": "1.1.0",
   "type": "module",
-  "description": "Vue3 中基于 ant-design-vue 二次封装基础组件文档",
+  "description": "Vue3中基于ant-design-vue二次封装的组件库",
   "author": {
     "name": "fanjunyang",
     "email": "isjunyang.fan@gmail.com",
