@@ -1,7 +1,7 @@
 // 全局注册组件
 import { App, Component } from 'vue';
-import JButton from './Button';
-import JInput from './Input';
+import JButton from './JButton';
+import JInput from './JInput';
 // 存储组件列表
 const components = [JButton, JInput],
   // 插件注册：在 Vue 项目的入口文件中，通过 ( app.use(插件) ) 进行注册
