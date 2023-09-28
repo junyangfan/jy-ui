@@ -26,6 +26,12 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint", "vue"],
+  /**
+   * 每个规则有【3】个错误级别。
+   * off或0: 关闭该规则；
+   * warn或1: 开启规则，使用警告级别的错误，不会导致程序退出；
+   * error或2: 开启规则，使用错误级别的错误，当被触发的时候，程序会退出。
+   */
   rules: {
     // rules 配置
     // 禁止使用多余的包

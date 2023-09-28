@@ -18,16 +18,17 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
+    "declaration": true, // 确保生成类型声明文件
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["package/*"]
 		}
 	},
 	"include": [
-		"package/**/*.ts",
-		"package/**/*.d.ts",
-		"package/**/*.tsx",
-		"package/**/*.vue",
+		"packages/**/*.ts",
+		"packages/**/*.d.ts",
+		"packages/**/*.tsx",
+		"packages/**/*.vue",
     "vite.d.ts",
 	],
 	"references": [{ "path": "./tsconfig.node.json" }]
