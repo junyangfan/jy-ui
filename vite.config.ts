@@ -59,6 +59,7 @@ export default defineConfig({
           vue: 'Vue',
         },
         exports: 'named',
+				// format: 'cjs',
       },
       // output: [
       //   {

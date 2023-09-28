@@ -2,5 +2,5 @@
 **/vite.config.js
 **/postcss.config.js
 **/vite.config.ts
-**/vite.d.ts
+**/global.d.ts
 **/lib/**

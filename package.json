@@ -10,6 +10,16 @@
     "url": "https://blog.fanjunyang.zone"
   },
   "license": "ISC",
+	"main": "lib/jy-ui.umd.js",
+  "module": "lib/jy-ui.umd.js",
+  "types": "lib/index.d.ts",
+	"files":[
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "lib",
+    "global.d.ts"
+  ],
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc && vite build",
