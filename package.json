@@ -23,7 +23,8 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "ac": "git add . && cz",
-    "cm": "cz"
+    "cm": "cz",
+    "release": "release-it"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.0",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@release-it/conventional-changelog": "^7.0.2",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "@vitejs/plugin-vue": "^4.2.3",
@@ -50,6 +52,7 @@
     "postcss": "^8.4.30",
     "postcss-preset-env": "^9.1.4",
     "prettier": "^3.0.3",
+    "release-it": "^16.2.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.6.0",
