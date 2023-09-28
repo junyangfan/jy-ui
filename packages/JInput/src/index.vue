@@ -17,7 +17,7 @@ defineProps({
 </template>
 
 <style lang="less" scoped>
-@import '@/style.less';
+@import url('../../style.less');
 .test {
   color: @themeColor;
   user-select: none;

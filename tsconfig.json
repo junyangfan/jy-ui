@@ -21,7 +21,7 @@
     "declaration": true, // 确保生成类型声明文件
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["package/*"]
+			"@/*": ["packages/*"]
 		}
 	},
 	"include": [
