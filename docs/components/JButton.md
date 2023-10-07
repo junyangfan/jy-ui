@@ -7,13 +7,11 @@
 
 <div>
   <JButton />
-  <a-button type="primary">Primary Button</a-button>
 </div>
 
 ```html
 <div>
   <JButton />
-  <a-button type="primary">Primary Button</a-button>
 </div>
 ```
 

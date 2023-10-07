@@ -9,6 +9,10 @@ defineProps({
     type: String,
     default: 'xx',
   },
+  value: {
+    type: String,
+    default: '',
+  },
 });
 </script>
 

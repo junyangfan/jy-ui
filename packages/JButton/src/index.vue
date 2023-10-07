@@ -16,6 +16,7 @@ defineProps({
 <template>
   <div class="test">测试组件-测试</div>
   <img :src="Logo" alt="" />
+  <a-button type="primary">Primary Button</a-button>
 </template>
 
 <style lang="less" scoped>
