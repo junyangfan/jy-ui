@@ -18,7 +18,7 @@ export default defineConfig({
       verbose: true,
       disable: false, // 不禁用压缩
       deleteOriginFile: false, // 压缩后是否删除原文件
-      threshold: 10240, // 压缩前最小文件大小
+      threshold: 10 * 1024, // 压缩前最小文件大小
       algorithm: 'gzip', // 压缩算法
       ext: '.gz', // 文件类型
     }),
@@ -26,7 +26,7 @@ export default defineConfig({
   resolve: {
     // 配置别名
     alias: {
-      '@': resolve(__dirname, 'packages'),
+      // '@': resolve(__dirname, 'packages'),
     },
     // 类型： string[] 导入时想要省略的扩展名列表。
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue',],
@@ -38,8 +38,15 @@ export default defineConfig({
 	},
   build: {
     outDir: 'lib',
-    //压缩
-    minify: false,
+		// assetsDir: 'assets',
+		assetsInlineLimit: 8 * 1024, // 图片转base64的最大限制
+    minify: 'terser',	//压缩
+		terserOptions:{
+			compress:{
+				drop_console:true,	// 去除console
+				drop_debugger: true, // 去除debugger
+			}
+		},
     lib: {
       entry: resolve(__dirname, 'packages/index.ts'),
       name: 'jy-ui',

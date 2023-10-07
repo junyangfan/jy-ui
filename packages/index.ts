@@ -1,5 +1,6 @@
 // 全局注册组件
 import { App, Component } from 'vue';
+import * as utils from './utils';
 import JButton from './JButton';
 import JInput from './JInput';
 // 存储组件列表
@@ -15,7 +16,7 @@ const components = [JButton, JInput],
   };
 // 按需引入
 
-export { JButton, JInput };
+export { utils, JButton, JInput };
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,

@@ -4,6 +4,7 @@ export default {
 };
 </script>
 <script setup lang="ts">
+import Logo from '../assets/logo.png';
 defineProps({
   type: {
     type: String,
@@ -14,6 +15,7 @@ defineProps({
 
 <template>
   <div class="test">测试组件-测试</div>
+  <img :src="Logo" alt="" />
 </template>
 
 <style lang="less" scoped>
