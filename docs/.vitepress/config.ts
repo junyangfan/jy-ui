@@ -1,5 +1,6 @@
 import sidebar from "./config/sidebar"
 import nav from "./config/nav"
+import { resolve } from 'path'
 
 export default {
   lang: 'zh-CN',
@@ -27,4 +28,11 @@ export default {
     lineNumbers: true,
   },
 	lastUpdated: true,
+	vite: {
+		resolve: {
+			alias: {
+				'@': resolve(__dirname, '../../packages'),
+			},
+		},
+	}
 }

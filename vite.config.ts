@@ -26,7 +26,7 @@ export default defineConfig({
   resolve: {
     // 配置别名
     alias: {
-      // '@': resolve(__dirname, 'packages'),
+      '@': resolve(__dirname, './packages'),
     },
     // 类型： string[] 导入时想要省略的扩展名列表。
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue',],
@@ -53,7 +53,7 @@ export default defineConfig({
 			}
 		},
     lib: {
-      entry: resolve(__dirname, 'packages/index.ts'),
+      entry: resolve(__dirname, './packages/index.ts'),
       name: 'jy-ui',
       fileName: (format) => `jy-ui.${format}.js`,
       // formats: ["es", "umd", "cjs"],

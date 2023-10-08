@@ -6,7 +6,8 @@ export default {
 <script setup lang="ts">
 import { Button } from 'ant-design-vue';
 import Logo from '../assets/logo.png';
-import { usePrefixCls } from '../../utils/useTools';
+// import { usePrefixCls } from '../../utils/useTools'
+import { usePrefixCls } from '@/utils/useTools';
 defineProps({
   type: {
     type: String,
@@ -24,7 +25,8 @@ defineProps({
 </template>
 
 <style lang="less" scoped>
+@import '@/style.less';
 .test {
-  color: red;
+  color: @themeColor;
 }
 </style>
