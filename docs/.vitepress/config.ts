@@ -26,4 +26,5 @@ export default {
     // 代码块显示行号
     lineNumbers: true,
   },
+	lastUpdated: true,
 }

@@ -6,6 +6,7 @@ export default {
 <script setup lang="ts">
 import { Button } from 'ant-design-vue';
 import Logo from '../assets/logo.png';
+import { usePrefixCls } from '../../utils/useTools';
 defineProps({
   type: {
     type: String,
@@ -17,7 +18,9 @@ defineProps({
 <template>
   <div class="test">测试组件-测试</div>
   <img :src="Logo" alt="" />
-  <Button type="primary">Primary Button</Button>
+  <Button type="primary" :prefix-cls="usePrefixCls('btn')">
+    Primary Button
+  </Button>
 </template>
 
 <style lang="less" scoped>
