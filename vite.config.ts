@@ -34,7 +34,12 @@ export default defineConfig({
 	css: {
 		postcss: {
 			plugins: [postcssPresetEnv()]
-		}
+		},
+		preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
 	},
   build: {
     outDir: 'lib',

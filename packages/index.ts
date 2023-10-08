@@ -1,5 +1,5 @@
 // 全局注册组件
-import { App, Component } from 'vue';
+import type { App, Component } from 'vue';
 import * as utils from './utils';
 import JButton from './JButton';
 import JInput from './JInput';

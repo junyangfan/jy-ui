@@ -1,7 +1,7 @@
 {
   "name": "jy-ui-design",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.1.2",
   "type": "module",
   "description": "Vue3中基于ant-design-vue二次封装的组件库",
   "author": {
@@ -12,7 +12,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/junyangfan/jy-ui"
+    "url": "https://github.com/junyangfan/jy-ui.git"
   },
   "homepage": "https://junyangfan.github.io/jy-ui",
   "bugs": "https://github.com/junyangfan/jy-ui/issues",
