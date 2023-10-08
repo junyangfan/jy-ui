@@ -14,7 +14,7 @@ export default {
 		siteTitle: 'jy-ui',
     author: 'FanJunyang',
     logo: '/logo.png',
-    docFooter: { prev: '上一篇', next: '下一篇' },
+    docFooter: { prev: '⬅上一篇', next: '下一篇➡' },
     lastUpdatedText: "最近更新时间",
   },
   head: [
