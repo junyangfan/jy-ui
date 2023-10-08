@@ -1,6 +1,7 @@
 import sidebar from "./config/sidebar"
 import nav from "./config/nav"
 import { resolve } from 'path'
+import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin'
 
 export default {
   lang: 'zh-CN',
@@ -26,6 +27,10 @@ export default {
     },
     // 代码块显示行号
     lineNumbers: true,
+		config(md) {
+      md.use(componentPreview)
+      md.use(containerPreview)
+    }
   },
 	lastUpdated: true,
 	vite: {

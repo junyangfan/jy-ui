@@ -1,19 +1,7 @@
 # 按钮组件
 
 ## 基础用法
-
-<script setup lang="ts">
-</script>
-
-<div>
-  <JButton />
-</div>
-
-```html
-<div>
-  <JButton />
-</div>
-```
+<preview path="../demos/JButton.vue" title="基本使用" description="xxxxx"></preview>
 
 ## 高级用法
 

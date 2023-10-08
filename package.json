@@ -45,6 +45,8 @@
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.2",
     "ant-design-vue": "4.x",
     "eslint": "^8.50.0",
     "less": "^4.2.0",
