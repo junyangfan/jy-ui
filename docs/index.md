@@ -25,6 +25,15 @@ features:
     details: 提交项目迭代效率，让开发者更关注逻辑层
 ---
 
+<div style="margin-top: 20px;">
+	<h1 style="text-align: center;">Thanks to all the contributors!</h1>
+	<p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;">
+		<a href="https://github.com/junyangfan/jy-ui/graphs/contributors">
+			<img src="https://contrib.rocks/image?repo=junyangfan/jy-ui" alt="contributors" />
+		</a>
+	</p>
+</div>
+
 <!-- ### 设计原则
 
 <div style="display:flex;justify-content: space-between;padding-bottom:40px">
