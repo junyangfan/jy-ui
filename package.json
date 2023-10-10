@@ -41,7 +41,7 @@
     "ac": "git add . && cz",
     "cm": "cz",
     "release": "release-it",
-    "test:local": "yarn build && yalc publish"
+    "test:push": "yarn build && yalc push"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.0",

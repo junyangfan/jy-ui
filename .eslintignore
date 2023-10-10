@@ -4,3 +4,4 @@
 **/vite.config.ts
 **/global.d.ts
 **/lib/**
+**/*.json
