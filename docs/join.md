@@ -44,7 +44,8 @@ yarn docs:dev
 │  │      JButton.md			组件说明文档
 │  │
 │  └─demos
-│         JButton.vue			组件示例
+│         JButton			组件示例
+│             index.vue
 │
 └─packages
     ├─JButton					组件目录

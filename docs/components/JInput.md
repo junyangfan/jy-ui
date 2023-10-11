@@ -2,12 +2,5 @@
 
 ## 基础用法
 
-<script setup lang="ts">
-import { ref } from 'vue';
-const value = ref<string>('');
-</script>
-
-<div>
-  <a-input v-model:value="value" placeholder="Basic usage" />
-</div>
+<preview path="../demos/JInput/index.vue" title="代码示例" description=""></preview>
 
