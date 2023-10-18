@@ -37,6 +37,7 @@ export default defineConfig({
 		},
 		preprocessorOptions: {
       less: {
+				modifyVars: {},
         javascriptEnabled: true,
       },
     },

@@ -39,5 +39,12 @@ export default {
 				'@': resolve(__dirname, '../../packages'),
 			},
 		},
+		css: {
+			preprocessorOptions: {
+				less: {
+					javascriptEnabled: true,
+				},
+			},
+		},
 	}
 }

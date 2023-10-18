@@ -1,6 +1,4 @@
 import DefaultTheme from 'vitepress/theme'
-import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/reset.css';
 import * as AntdIcons from '@ant-design/icons-vue';
 import JyUi from '../../../packages'
 import theme from 'vitepress/dist/client/theme-default/index'
@@ -11,9 +9,7 @@ export default {
   ...DefaultTheme,
 	...theme,
   enhanceApp(ctx) {
-    DefaultTheme.enhanceApp(ctx),
-    // 注册ElementPlus
-    ctx.app.use(Antd)
+    DefaultTheme.enhanceApp(ctx)
     // 注册所有图标
     for (const [key, component] of Object.entries(AntdIcons)) {
       ctx.app.component(key, component)

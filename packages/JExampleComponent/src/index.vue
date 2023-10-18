@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {
-  name: 'JButton',
+  name: 'JExampleComponent',
 };
 </script>
 <script setup lang="ts">
@@ -19,14 +19,14 @@ defineProps({
 </script>
 
 <template>
-  <ConfigProvider :theme="theme" :prefix-cls="usePrefixCls('btn')">
-    <Button type="primary">测试组件</Button>
+  <ConfigProvider :theme="theme" :prefix-cls="usePrefixCls('example')">
+    <Button class="example-component">JExampleComponent</Button>
   </ConfigProvider>
 </template>
 
 <style lang="less" scoped>
 @import '@/style.less';
-.test {
+.example-component {
   color: @themeColor;
 }
 </style>
