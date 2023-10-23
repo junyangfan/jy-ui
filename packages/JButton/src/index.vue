@@ -4,24 +4,15 @@ export default {
 };
 </script>
 <script setup lang="ts">
-import { Button, ConfigProvider } from 'ant-design-vue';
+import { Button } from 'ant-design-vue';
 import { usePrefixCls } from '@/utils/useTools';
-import defaultThemeConfig from '@/themeConfig';
-
-defineProps({
-  // 主题配置（https://next.antdv.com/docs/vue/customize-theme-cn）
-  theme: {
-    type: Object,
-    required: false,
-    default: defaultThemeConfig,
-  },
-});
 </script>
 
 <template>
-  <ConfigProvider :theme="theme" :prefix-cls="usePrefixCls('btn')">
-    <Button type="primary">测试组件</Button>
-  </ConfigProvider>
+  <div>xxx</div>
+  <JThemeConfig>
+    <Button type="primary" :prefix-cls="usePrefixCls('btn')">测试组件</Button>
+  </JThemeConfig>
 </template>
 
 <style lang="less" scoped>

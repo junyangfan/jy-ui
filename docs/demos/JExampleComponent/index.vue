@@ -1,12 +1,12 @@
 <script lang="ts">
 export default {
-  name: 'ExampleComponentDemo',
+  name: 'JExampleComponentDemo',
 };
 </script>
 <script setup lang="ts"></script>
 
 <template>
-  <example-component />
+  <JExampleComponent />
 </template>
 
 <style lang="less" scoped></style>
